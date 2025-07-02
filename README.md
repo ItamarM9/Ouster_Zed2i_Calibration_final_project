@@ -1,6 +1,3 @@
-# Ouster_Zed2i_Calibration_final_project
-
-
 # LiDAR–Camera Calibration Scripts
 
 This folder contains scripts for synchronizing LiDAR–Camera pairs, calibrating the extrinsics, visualizing ROIs, and projecting LiDAR points onto camera images.
