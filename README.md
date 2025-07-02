@@ -68,8 +68,7 @@ This folder contains scripts for: creating a subset of synchronized LiDAR–Came
 
 ## ⚠️ What You Must Always Do
 
-✅ **Always update file paths** to match your Ubuntu or Windows machine.  
-✅ Use **forward slashes** (`/home/...`) on Linux.  
+✅ **Always update file paths** to match your Ubuntu or Windows machine. 
 ✅ Make sure your input files exist before you run a script.  
 ✅ Double-check that `pattern_size` and `square_size` match your physical chessboard when relevant.  
 ✅ Outputs are written to folders defined in each script — check these after you run.
