@@ -1,3 +1,28 @@
+# 🎥 Recording the Calibration Set
+
+To achieve accurate LiDAR–Camera calibration, it's essential to capture high-quality, synchronized recordings from both sensors with the calibration target (typically a chessboard) clearly visible. Follow these steps:
+
+### ✅ Step-by-Step Instructions:
+
+1. **Power on and verify** both the LiDAR and camera sensors are functioning properly.
+2. **Start both the LiDAR and camera recordings** simultaneously.
+3. **Hold the calibration chessboard firmly** so that it's fully visible to both sensors. The board should face the camera but be angled slightly to provide depth variation for the LiDAR.
+4. **Move slowly and deliberately** through the following motions:
+   - Side-to-side (left ↔ right).
+   - Forward and backward (toward and away from the sensors).
+   - Tilt and rotate the board at various angles to capture a wide variety of poses and orientations.
+5. **Stop both the LiDAR and camera recordings** when finished. Ensure that all output files are saved correctly (images, `.bin` files, and timestamp logs).
+
+### 📌 Tips for Best Results:
+
+- **Avoid occlusions**: Make sure your body or hands don’t block any part of the chessboard from either sensor. Keep the board fully within the camera frame and the LiDAR’s field of view throughout.
+- **Vary the distance** from close range (~1 meter) to farther ranges (~5 meters) to improve calibration robustness.
+- Aim to record at least **30–50 usable frames** with clear chessboard visibility and LiDAR coverage. You will record more frames — the subset creation script will filter the best matches afterward.
+- Ensure your **chessboard is flat and non-reflective** — glossy or warped boards can introduce noise in both image and LiDAR data.
+- **Avoid fast movements** — sudden motion can cause blur or misalignment, reducing calibration accuracy.
+
+
+
 # LiDAR–Camera Calibration Scripts
 
 This folder contains scripts for: creating a subset of synchronized LiDAR–Camera pairs, calibration - finding the intrinsic and extrinsics, visualizing lidar ROIs, and projecting LiDAR points onto camera images with your chosen ROI.
